@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import "tailwindcss-primeui";
+@import "primeicons/primeicons.css";
+
+@font-face {
+  font-family: 'DoctorGlitch';
+  src: url('/fonts/DoctorGlitch.otf');
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: Georgia, serif;
+}
