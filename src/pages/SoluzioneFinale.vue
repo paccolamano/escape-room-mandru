@@ -28,7 +28,7 @@ function terminaGioco() {
       </div>
 
       <div class="sottotitolo-finale">
-        anzi... prima leggi il biglietto (digitale)
+        anzi... prima leggi il biglietto
       </div>
 
       <button class="termina-btn" @click="terminaGioco">Termina il gioco</button>
