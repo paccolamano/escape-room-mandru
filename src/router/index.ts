@@ -54,13 +54,18 @@ const router = createRouter({
       name: 'cucina',
       component: () => import('../pages/Cucina.vue'),
     },
+    {
+      path: '/soluzione-finale',
+      name: 'soluzione-finale',
+      component: () => import('../pages/SoluzioneFinale.vue'),
+    },
   ],
 })
 
 router.beforeEach((to) => {
   const game = useGameStore()
 
-  const roomNames = ['home', 'camera', 'bagno-rosa', 'studio', 'camera-vestiti', 'salotto', 'bagno-gatti', 'cucina']
+  const roomNames = ['home', 'camera', 'bagno-rosa', 'studio', 'camera-vestiti', 'salotto', 'bagno-gatti', 'cucina', 'soluzione-finale']
 
   if (roomNames.includes(to.name as string) && !game.gameStarted) {
     return { name: 'start' }
